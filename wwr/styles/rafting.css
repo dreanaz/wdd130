@@ -15,7 +15,9 @@ a {
     text-decoration: none
 }
 
-header, main, footer {
+header,
+main,
+footer {
     max-width: 960px;
 }
 
@@ -23,6 +25,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 header img {
     /* this affects the Rapids logo*/
     /* display: block;  do not use*/
