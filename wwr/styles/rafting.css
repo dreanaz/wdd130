@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #08415C;
+    --secondary-color: #CC2936;
+    --accent1-color: #EBBAB9;
+    --accent2-color: #388697;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none
+}
+
+header img {
+    /* this affects the Rapids logo*/
+    /* display: block;  do not use*/
+    width: 150px;
+    height: auto;
+}
+
+div.hero {
+    /* this shifts the small img in the pink in relation to the words*/
+    position: relative;
+    border: 3px solid var(--primary-color);
+}
+
+h1 {
+    /* this moves the Rapids by nature*/
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 20px;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: xx-large;
+}
+
+article {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 20px;
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+}
+
+article img {
+    /*image associated with hero paragraph*/
+    float: right;
+}
+
+footer {
+    color: var(--primary-color);
+    padding: 20px;
+}
+
+.sociallinks img {
+    width: 50px;
+    height: auto;
+}
