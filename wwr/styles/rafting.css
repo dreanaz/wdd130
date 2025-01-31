@@ -15,6 +15,14 @@ a {
     text-decoration: none
 }
 
+header, main, footer {
+    max-width: 960px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
 header img {
     /* this affects the Rapids logo*/
     /* display: block;  do not use*/
@@ -32,7 +40,7 @@ h1 {
     /* this moves the Rapids by nature*/
     position: absolute;
     top: 20px;
-    left: 250px;
+    left: 389px;
     border: 1px solid rgb(0 0 0 / 0.1);
     padding: 20px;
     background-color: var(--accent1-color);
@@ -47,7 +55,8 @@ h2 {
 
 article {
     position: absolute;
-    top: 200px;
+    width: 800px;
+    top: 340px;
     left: 100px;
     border: 1px solid rgb(0 0 0 / 0.1);
     padding: 20px;
@@ -58,6 +67,7 @@ article {
 article img {
     /*image associated with hero paragraph*/
     float: right;
+    width: 150px;
 }
 
 footer {
