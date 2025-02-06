@@ -44,8 +44,8 @@ header {
     /* Vertically center the items */
     justify-content: center;
     /* Optional, add padding around the header */
-    border: var(--border);
-    padding: var(--padding);
+    border: 1rem;
+    padding: 1rem;
     background-color: lightgrey;
 }
 
@@ -70,7 +70,6 @@ img {
 div.hero {
     /* this shifts the small img in the pink in relation to the words*/
     position: relative;
-    border: 3x solid var(--primary-color);
     padding: 10px;
 }
 
@@ -134,7 +133,7 @@ h2 {
     display: grid;
     justify-content: center;
     margin: var(--margin);
-    border: var(--border);
+    border: 1rem;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 35px;
