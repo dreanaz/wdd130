@@ -1,8 +1,12 @@
 :root {
     --primary-color: #08415C;
     --secondary-color: #CC2936;
-    --accent1-color: #EBBAB9;
-    --accent2-color: #388697;
+    --accent1-color: black;
+    --accent2-color: rgb(109, 178, 239);
+    --margin: 1rem;
+    --padding: 1rem;
+    --border: 1px solid rgb (0 0 0 / .1);
+
 }
 
 * {
@@ -16,9 +20,47 @@ a {
 }
 
 header,
-main,
-footer {
+main, footer {
     max-width: 960px;
+}
+
+.navigation a {
+    display: block;
+    background-color: var(--accent2-color);
+    padding: var(--padding);
+    align-content: space-around;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: black;
+    width: 150px;
+    text-align: center;
+    font-weight: 700;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    /* Logo on the left, nav on the right */
+    align-items: center;
+    /* Vertically center the items */
+    justify-content: center;
+    /* Optional, add padding around the header */
+    border: var(--border);
+    padding: var(--padding);
+    background-color: #FFFFFF;
+}
+
+header img {
+    /* this affects the Rapids logo*/
+    /* display: block;  do not use*/
+    width: 170px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 img {
@@ -26,17 +68,11 @@ img {
     height: auto;
 }
 
-header img {
-    /* this affects the Rapids logo*/
-    /* display: block;  do not use*/
-    width: 150px;
-    height: auto;
-}
-
 div.hero {
     /* this shifts the small img in the pink in relation to the words*/
     position: relative;
-    border: 3px solid var(--primary-color);
+    border: 3x solid var(--primary-color);
+    padding: 10px;
 }
 
 h1 {
@@ -46,24 +82,46 @@ h1 {
     left: 389px;
     border: 1px solid rgb(0 0 0 / 0.1);
     padding: 20px;
-    background-color: var(--accent1-color);
-    opacity: 0.8;
+    background-color: rgb(109, 178, 239);
+    font-size: 2.5rem;
 }
 
-h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: xx-large;
+.history-section {
+    display: flex;
+    flex-direction: right;
+    justify-content: center;
+    
 }
+
+.history-section h2 {
+    text-align: center;
+    /* Center the heading and captions */
+    margin: 20px;
+    display: grid;
+}
+
+.history-section img {
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+.history-section p {
+    min-height: 100px;
+    display: flex;
+}
+
+
+
 
 article {
     position: absolute;
     width: 800px;
-    top: 340px;
+    top: 100px;
     left: 100px;
     border: 1px solid rgb(0 0 0 / 0.1);
     padding: 20px;
-    background-color: var(--accent1-color);
+    background-color: rgb(109, 178, 239);
     opacity: 0.8;
 }
 
@@ -73,12 +131,99 @@ article img {
     width: 150px;
 }
 
-footer {
-    color: var(--primary-color);
-    padding: 20px;
+h2 {
+    display: grid;
+    justify-content: center;
+    margin: var(--margin);
+    border: var(--border);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 35px;
+    background-color: var(--accent2-color);
+    color: black;
+}
+.adventure {
+    text-align: center;
+    /* Center the heading and captions */
+    margin: 20px;
 }
 
-.sociallinks img {
-    width: 50px;
+.adventure h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.adventure figure {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    width: 130px
+}
+
+.adventure img {
+    width: 100%;
     height: auto;
+    display: block;
+    object-fit: cover;
+    /* Makes sure the images fill the container */
+}
+
+.adventure figcaption {
+    left: 10px;
+    background-color: var(--accent2-color);
+    color: black;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+figure {
+    /* Makes the figures display side by side */
+    margin: 10px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    /* Makes the image responsive */
+    margin: 1rem
+}
+
+figcaption {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFFFFF;
+    /* Optional: background color for footer */
+}
+
+footer p {
+    text-align: center;
+    flex-grow: 1;
+    /* Ensures the paragraph takes up available space */
+}
+
+footer .sociallinks {
+    display: flex;
+    gap: 10px;
+    /* Adjust space between icons */
+}
+
+footer .sociallinks a {
+    display: inline-block;
+}
+
+footer .sociallinks img {
+    width: 30px;
+    /* Set the size of social media icons */
+    height: 30px;
+    /* Set the size of social media icons */
 }
