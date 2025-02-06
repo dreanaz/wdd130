@@ -87,10 +87,8 @@ h1 {
 }
 
 .history-section {
-    display: flex;
-    flex-direction: right;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .history-section h2 {
@@ -98,6 +96,7 @@ h1 {
     /* Center the heading and captions */
     margin: 20px;
     display: grid;
+    grid-row: 2;
 }
 
 .history-section img {
@@ -108,7 +107,8 @@ h1 {
 }
 .history-section p {
     min-height: 100px;
-    display: flex;
+    display: grid;
+    grid-template-rows: 100%;
 }
 
 
