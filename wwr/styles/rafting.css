@@ -2,10 +2,10 @@
     --primary-color: #08415C;
     --secondary-color: #CC2936;
     --accent1-color: black;
-    --accent2-color: rgb(109, 178, 239);
+    --accent2-color: #6db2ef;
     --margin: 1rem;
     --padding: 1rem;
-    --border: 1px solid rgb (0 0 0 / .1);
+    --border: 1px solid rgb (0 0 0 /.1);
 
 }
 
@@ -26,7 +26,7 @@ main, footer {
 
 .navigation a {
     display: block;
-    background-color: var(--accent2-color);
+    background-color: #6db2ef;
     padding: var(--padding);
     align-content: space-around;
     justify-content: space-evenly;
@@ -139,7 +139,7 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 35px;
-    background-color: var(--accent2-color);
+    background-color: #6db2ef;
     color: black;
 }
 .adventure {
@@ -171,7 +171,7 @@ h2 {
 
 .adventure figcaption {
     left: 10px;
-    background-color: var(--accent2-color);
+    background-color:#6db2ef;
     color: black;
     padding: 5px 10px;
     font-size: 1.2rem;
