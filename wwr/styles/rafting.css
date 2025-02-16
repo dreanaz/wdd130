@@ -193,6 +193,43 @@ figcaption {
     margin-top: 8px;
 }
 
+.image-text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.image-text-item {
+    text-align: center;
+    width: 250px;
+    /* You can adjust the width as per your design */
+}
+
+.team-member img {
+    width: 40%;
+    /* Makes the image fill the width of the container */
+    height: auto;
+    /* Maintains the aspect ratio */
+    border-radius: 50%;
+    /* Optional: for circular images */
+    object-fit: cover;
+}
+
+.text-box {
+    margin-top: 10px;
+}
+
+.text-box h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.text-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
