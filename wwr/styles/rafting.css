@@ -1,8 +1,8 @@
 :root {
     --primary-color: #08415C;
     --secondary-color: #CC2936;
-    --accent1-color: black;
-    --accent2-color: #6db2ef;
+    --accent1-color: #ffff;
+    --accent2-color: #054073;
     --margin: 1rem;
     --padding: 1rem;
 }
@@ -14,7 +14,7 @@
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 header,
@@ -23,16 +23,24 @@ main, footer {
 }
 
 .navigation a {
-    display: block;
-    background-color: #6db2ef;
+    
     padding: 8px;
     align-content: space-around;
     justify-content: space-evenly;
     font-size: 20px;
-    color: black;
+    color: #ffff;
     width: 150px;
     text-align: center;
     font-weight: 700;
+}
+.navigation a:hover {
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    
 }
 
 header {
@@ -45,7 +53,7 @@ header {
     /* Optional, add padding around the header */
     border: 1rem;
     padding: 1rem;
-    background-color: lightgrey;
+    background-color: #054073;
 }
 
 header img {
@@ -53,12 +61,7 @@ header img {
     /* display: block;  do not use*/
     width: 170px;
     height: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+    border-radius: 50%;
 }
 
 img {
@@ -67,26 +70,29 @@ img {
 }
 
 div.hero {
-    /* this shifts the small img in the pink in relation to the words*/
+    /* this shifts the small img in the blue in relation to the words*/
     position: relative;
-    padding: 10px;
 }
 
+
 h1 {
-    /* this moves the Rapids by nature*/
+    /* this moves the Rapids*/
     position: absolute;
     top: 20px;
     left: 275px;
     border: 1px solid rgb(0 0 0 / 0.1);
-    padding: 20px;
-    background-color: rgb(109, 178, 239);
-    font-size: 2.5rem;
+    padding: 12px;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(109, 178, 239)
+
 }
 
 .history-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -101,7 +107,8 @@ h1 {
     width: 200px;
     height: auto;
     display: grid;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
     
 
 }
@@ -137,8 +144,8 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 35px;
-    background-color: #6db2ef;
-    color: black;
+    background-color: #054073;
+    color: #ffff;
 }
 .adventure {
     text-align: center;
@@ -148,7 +155,7 @@ h2 {
 .adventure h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: black;
+    color: #ffff;
 }
 
 .adventure figure {
@@ -168,8 +175,8 @@ h2 {
 
 .adventure figcaption {
     left: 10px;
-    background-color:#6db2ef;
-    color: black;
+    background-color:#054073;
+    color: #ffff;
     padding: 5px 5px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -189,31 +196,26 @@ figure img {
 
 figcaption {
     font-size: 16px;
-    color: #555;
+    color: 054073;
     margin-top: 8px;
 }
 
-.image-text-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.image-text-item {
-    text-align: center;
-    width: 250px;
-    /* You can adjust the width as per your design */
-}
-
 .team-member img {
-    width: 40%;
+    display: flex;
+    width: 30%;
     /* Makes the image fill the width of the container */
     height: auto;
     /* Maintains the aspect ratio */
     border-radius: 50%;
     /* Optional: for circular images */
-    object-fit: cover;
+}
+.support-team div {
+    display: flexbox;
+    border: 3px dashed darkcyan
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .text-box {
@@ -230,12 +232,27 @@ figcaption {
     color: #555;
 }
 
+.hero h1 {
+    display: block;
+    color: #054073;
+    text-align: center;
+    font-size: 2.8rem;
+}
+.hero-image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: lightgrey;
+    margin-top: 50px;
+    background-color: #054073;
+    color: #ffff
 }
 
 footer p {
