@@ -82,15 +82,14 @@ header img {
 
 .content-box {
     position: absolute;
+    display: flex;
     top: 25%;
+    padding: 30px;
     /* Center vertically */
     left: 50%;
     /* Center horizontally */
     transform: translate(-50%, -50%);
     /* Offset by half of its own width/height to perfectly center */
-    background-color: 
-    padding: 30px;
-    display: flex;
     /* Flexbox to arrange the paragraph and image side by side */
     justify-content: center;
     align-items: center;
@@ -346,21 +345,16 @@ footer {
 }
 
 footer p {
-    text-align: center;
+    margin: 0;
     flex-grow: 1;
     /* Ensures the paragraph takes up available space */
+}
+footer img {
+    width: 30px;
+    height: 30px;
 }
 
 footer .sociallinks {
     display: flex;
     gap: 10px;
-    /* Adjust space between icons */
 }
-
-footer .sociallinks a {
-    display: inline-block;
-}
-footer img {
-    width: 30px;
-    height: 30px;
-}   
