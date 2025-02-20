@@ -156,38 +156,21 @@ article img {
     display: inline-block
 }
 .part1 {
-    display: ;
     flex-wrap: wrap;
 }
-.container div {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+.container {
+   display: flex;
 }
-.part1 { /*top*/
-
-}
-.part2 { /*form*/
-    display: flex;
-
-
-}
-.part3 { /*experts*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.part1, .part2, .part3 {
+    display: inline-block
+    
 }
 .part3 p {
-    display: grid;
-    grid-column: left;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+    display: contents;
+    align-items: center;
 }
 .part3 img {
-    width: 30%;
+    width: 250px;
     height: auto;
     border-radius: 8px;
     padding: 10px;
