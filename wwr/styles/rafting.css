@@ -162,15 +162,18 @@ article img {
    display: flex;
 }
 .part1, .part2, .part3 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
     display: inline-block
     
 }
-.part3 p {
+.part3 p, .part3 img {
     display: contents;
     align-items: center;
 }
 .part3 img {
-    width: 250px;
+    width: 150px;
     height: auto;
     border-radius: 8px;
     padding: 10px;
