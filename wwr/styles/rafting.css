@@ -52,6 +52,15 @@ header img {
 .hero-h1 {
     position: relative;
 }
+.hero p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
 .main-image img, .hero-image img, .hero-h1 {
     width: 100%;
     /* Make the image fill the width of the container */
@@ -87,10 +96,12 @@ header img {
     /* Maintain aspect ratio */
     margin-left: 10px;
 }
+
+
 .history-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5px;
+    margin-top : 5px;
     margin-bottom: 5px;
 }
 .history-section img {
@@ -191,6 +202,61 @@ article img {
 .part3 p {
     width: 50%;
 }
+.newsletter {
+    background: lightgoldenrodyellow;
+    color: #08415C;
+    grid-area: span;
+}
+.newsletter img {
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    display: block;
+}
+.newsletter p{
+    color: #08415C;
+    text-align: justify;
+    padding: 25px;
+
+}
+.trips {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color:#CC2936;
+    color: white;
+}
+
+.trips img {
+    width: 600px;
+    height: auto;
+    padding: 10px;
+}
+.deals {
+    background: rgb(200, 238, 200);
+    color:#08415C;
+    text-align:center;
+    padding: 20px;
+}
+.deals-img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.deals p {
+    color: #08415C;
+    font-size: 18px;
+}
+
+.trips h2, .newsletter h2, deals h2 {
+    font-size: 2.3rem;
+}
+
 button {
     background-color: #007bff;
     color: white;
